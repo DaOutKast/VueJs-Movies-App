@@ -1,0 +1,93 @@
+html, body {
+  -webkit-font-smoothing: antialiased;
+  @include breakpoint($tablet) {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+}
+
+//
+// Layout and class helpers
+// -----------------
+//
+
+.inline {
+  display: inline;
+}
+
+.mobile {
+  display: none;
+  @include breakpoint($mobile) {
+    display: block;
+  }
+}
+
+.style-section {
+  max-width: 1600px;
+  .row {
+    margin: 20px 20px 20px 0;
+    display: table;
+  }
+  .block {
+    width: 50px;
+    margin-right: 20px;
+    height: 50px;
+  }
+  .block-2 {
+    width: 100px;
+    margin-right: 20px;
+    height: 50px;
+  }
+
+  p {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.section-wrapper {
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+//
+// Grid system
+//
+
+.g {
+  @include clearfix();
+  &--2 {
+    .g__item {
+      width: 50%;
+      float: left;
+      @include breakpoint($tabletP) {
+        width: 100%;
+        float: none;
+      }
+      @include breakpoint($mobile) {
+        padding: 0;
+      }
+    }
+  }
+  &--3 {
+    .g__item {
+      width: 33.3333%;
+      float: left;
+      @include breakpoint($tabletP) {
+        width: 100%;
+        float: none;
+      }
+    }
+  }
+  &--4 {
+    .g__item {
+      width: 25%;
+      float: left;
+      @include breakpoint($tablet) {
+        width: 50%;
+      }
+    }
+  }
+}
+

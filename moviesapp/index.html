@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movies App</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+
+<div class="container" id="app">
+    <h1>{{ title }}</h1>
+
+    <hr>
+
+    <div class="pull-right filter">
+        <input type="text" id="filter">
+        <label for="filter" v-bind="filter">filter</label>
+    </div>
+
+    <div v-for="movie in movies" class="row movie-item">
+        <div class="col-md-2 pull">
+            <img src="{{ movie.field_movie_poster[0].url }}" alt="{{ movie.field_movie_poster[0].alt }}">
+        </div>
+
+        <div class="col-md-6">
+            <h4>{{ movie.title[0].value }}</h4>
+            <p>
+                <strong>Director:</strong> {{ movie.field_director[0].value }}
+            </p>
+
+            <div class="row">
+                <div class="col-md-2">
+                    <strong>Actors:</strong><br>
+                    <span v-for="actor in movie.field_actors">
+                    {{ actor.value }}<br>
+                </span>
+                </div>
+
+                <div class="col-md-2">
+                    <strong>Genre:</strong><br>
+                    <span v-for="genre in movie.field_genre">
+                    {{ genre.value }}<br>
+                </span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="i-am-ruhjaan-cupido"><a class="LI-simple-link" href='https://za.linkedin.com/in/i-am-ruhjaan-cupido?trk=profile-badge'>Ruhjaan Cupido</a></div>
+
+<script type="text/javascript" src="js/vue.js"></script>
+<script type="text/javascript" src="js/vue-resource.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+</body>
+</html>

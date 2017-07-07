@@ -1,0 +1,14 @@
+////////////////////////////////////////////////////////////////////////////////
+// Page Styling
+// --------------------
+// This file combines all partials into one main style sheet, to be loaded on 
+// all pages.
+////////////////////////////////////////////////////////////////////////////////
+
+@import "vars"; // Imports default variables and mixins.
+@import "fonts"; // Imports default variables and mixins.
+@import "buttons"; // Imports default variables and mixins.
+@import "layout";   // Defines positioning  of major page elements.
+@import "base";     // Establishes general color and typography rules and browser resets.
+@import "normalize"; // Default content styles.
+@import "print";    // Defines styles for printing.

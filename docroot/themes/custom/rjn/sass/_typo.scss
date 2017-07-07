@@ -1,0 +1,17 @@
+a {
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #555;
+  text-decoration: none;
+  font-weight: bold;
+  //text-shadow: 0 0 4px #fff;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1, h2, h3, h4, p {
+  font-family: Helvetica, Arial, Sans-Serif;
+  color: #777;
+}

@@ -1,0 +1,78 @@
+//
+// Buttons partial
+//
+.button, input[type=submit]  {
+  display: flex;
+  background: transparent;
+  padding: 0.6em 1em;
+  cursor: pointer;
+  text: {
+    decoration: none !important;
+    transform: uppercase;
+    align: center;
+  }
+  display: inline-block;
+  &.arrow{
+    padding: 0.5em 0.3em;
+    &.right {
+      img {
+        margin: -4px 0 0 4px;
+      }
+    }
+    img {
+      margin: -4px 4px 0 0;
+    }
+  } 
+  svg {
+    position: relative;
+    z-index: 1;
+    top: 3px;
+    left: 13px;
+    margin-right: 13px;
+    transition: 0.2s ease-in-out;
+    }
+  transition: 0.2s ease-in-out;
+  @include breakpoint($tablet) {
+    font-size: 94%;
+  }
+  @include breakpoint($tabletP) {
+  }
+  @include breakpoint($mobile) {
+    width: 100%;
+    display: block;
+    font-size: 110%;
+  }
+
+}
+
+@mixin button-theme($btn-color) {
+  color: #fff;
+  background: $btn-color;
+  border: 3px solid $btn-color;
+  transition: 0.2s ease-in-out;
+  path{
+    fill:#fff;
+    }
+  &:hover {
+    color: $btn-color;
+    background: #fff;
+    border: 3px solid $btn-color;
+
+    transition: 0.2s ease-in-out;
+    path{
+      fill:$btn-color;
+      transition: 0.2s ease-in-out;
+      }
+  }
+  &:visited {
+    color: $btn-color;
+    border: 3px solid $btn-color;
+  }
+}
+
+
+
+
+
+
+

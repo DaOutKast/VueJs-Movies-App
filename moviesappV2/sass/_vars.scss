@@ -1,0 +1,92 @@
+////////////////////////////////////////////////////////////////////////////////
+// "vars" partial
+// --------------------
+//
+////////////////////////////////////////////////////////////////////////////////
+
+//
+// Variables
+////////////////////////////////////////
+
+//
+// Widths
+//
+$first_sidebar_width : 190px;
+$second_sidebar_width : 200px;
+$page_width : 1920px;
+$navigation_wrapper_width : 1280px;
+$navigation_sub_width : 768px;
+$logo_width : 239px;
+$footer_logo_width : 213px;
+
+//
+// Breakpoints
+//
+$tablet : 1024px;
+$tabletP : 768px;
+$mobile : 600px;
+
+//
+// Heights
+//
+$navigation_header_height: 90px;
+$navigation_sub_height: 50px;
+$navigation_height : 40px;
+$footer_height : auto;
+$logo_height : 20px;
+$footer_logo_height : 78px;
+
+//
+// Padding
+//
+$section_padding : 24px;
+$mobile_padding : 5;
+
+//
+// Backgrounds, change these when you get started with your theme.
+//
+$border : 1px dotted #888;
+$header_bg : #fff;
+$footer_bg : #fff;
+$sidebar_first_bg : #fff;
+$sidebar_second_bg : #fff;
+$navigation_bg : #fff;
+$navigation_sub_bg : #999;
+$navigation_header_border: #666;
+
+//
+// Fonts
+//
+$main_font : Arial, sans-serif;
+$monospace_font : "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+
+
+//
+// Colors
+//
+$black : #000;
+$white : #fff;
+$grey : #979797;
+
+
+$pri_red : #cf142b;
+$sec_red : #a6101e;
+$logo_blue : #152031;
+$grey_blue : #1d334b;
+$teal : #307787;
+$turquoise : #4ba4a6;
+$bright_blue : #56b6bf;
+
+$link_color : #1a1a1a;
+$visited_link_color : #1d334b;
+$active_link_color : #1d334b;
+$main_text_color : #1a1a1a;
+$header_text_color : red;
+$selection_text_color : #fff;
+$selection_bg_color : #cf142b;
+
+$active_nav_link_color : #ff2800;
+$sub_nav_color : #212121;
+$foot_legal_color : #999;
+
+@import "mixins";

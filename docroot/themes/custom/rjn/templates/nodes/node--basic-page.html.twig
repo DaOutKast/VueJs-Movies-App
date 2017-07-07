@@ -1,0 +1,23 @@
+<section {{ attributes }} class="wrapper hero__copy center">
+    {{ title_prefix }}
+    {{ title_suffix }}
+
+    {% if content.field_title|render %}
+        <h4 class="hero__headline--left center">{{ title.value | raw }}</h4>
+        {% if not content.field_body|render  is empty %}
+            <p class="center">{{ content.field_body }}</p>
+        {% endif %}
+    {% endif %}
+
+    <div class="center">
+        {{ content_attributes }}
+        {{ content.field_widgets }}
+    </div>
+    <ul style="text-align: center">
+        <!-- Social Chiclets -->
+        <li class="social"><a onclick="ga('send', 'event', 'social-exit', 'click', 'facebook');" href="https://www.facebook.com/EDGEHuntersza/" target="_blank"> <img src="/{{ directory }}/svg/facebook.svg" alt="" width="40px"></a></li>
+        <li class="social"><a onclick="ga('send', 'event', 'social-exit', 'click', 'twitter');" href="https://twitter.com/EDGEHuntersza" target="_blank"> <img src="/{{ directory }}/svg/twitter.svg" alt="" width="40px"></a></li>
+        <li class="social"><a onclick="ga('send', 'event', 'social-exit', 'click', 'instagram');" href="https://www.instagram.com/edgehuntersza/" target="_blank"> <img src="/{{ directory }}/svg/insta.svg" alt="" width="40px"></a></li>
+        <li class="social"><a onclick="ga('send', 'event', 'social-exit', 'click', 'youtube');" href="https://www.youtube.com/channel/UCD9EmZPfREM30n6ScGJfwYQ" target="_blank"> <img src="/{{ directory }}/svg/youtube.svg" alt="" width="40px"></a></li>
+    </ul>
+</section>

@@ -1,0 +1,53 @@
+header {
+  position: relative;
+
+  .logo {
+    position: absolute;
+    left: -15px;
+    top: -15px;
+
+    a {
+      display: block;
+    }
+  }
+}
+
+.banner {
+  height: 300px;
+  background: url('../images/placeholder-header.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.dn {
+  display: none;
+}
+
+.nav {
+  position: absolute;
+  right: 20px;
+  bottom: -30px;
+
+  a {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    &.is-active {
+      color: red;
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    margin: 0;
+    list-style: none;
+    @include clearfix;
+  }
+
+  li {
+    float: left;
+    //display: inline;
+    padding: 0 10px;
+
+  }
+}

@@ -1,0 +1,30 @@
+
+//
+// REM sizing
+///////////////////////////////////
+@mixin font-size($sizeValue: 1.6, $line: $sizeValue * 1.5){
+  font-size: ($sizeValue * 1) + px;
+  line-height: ($line * 1) + px;
+  font-size: ($sizeValue / 10) + rem;
+  line-height: ($line / 10) + rem;
+}
+
+
+// Breakpoint mixin
+@mixin breakpoint($max, $min:'') {
+  @if ($min!='') {
+    @media only screen and (min-width: $min) and (max-width: $max) { @content; }
+  } @else {
+    @media only screen and (max-width: $max) { @content; }
+  }
+}
+
+
+//cleafix
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

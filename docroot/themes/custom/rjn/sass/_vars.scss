@@ -1,0 +1,62 @@
+////////////////////////////////////////////////
+///////////////// Breakpoints //////////////////
+////////////////////////////////////////////////
+
+$tablet : 1024px;
+$tab800 : 800px;
+$tabletP : 768px;
+$mobile : 600px;
+$mobileL : 700px;
+
+////////////////////////////////////////////////
+//////////////////// Colors ////////////////////
+////////////////////////////////////////////////
+
+// Global Colors
+$black : #000;
+$white : #fff;
+$red : #d30000;
+
+// Background Colors
+//$main_bg_color : #0C1925;
+$main_bg_color : #0d1925;
+//$main_bg_color : #023c47;
+$form_bg_color : #0d2933;
+
+// Text Colors
+$text_grey : #dee4e7;
+$text_dark_grey : #949799;
+$main_text_color : #949799;
+$header_text_color : #fff;
+
+// Accent Colors
+$blue_active : #00849e; // Buttons, text and accents
+$blue_inactive : #09394A;
+$button_tan : #d2c98a;
+$input_color : #fff;
+$input_color_jade : #0b5e67;
+$input_color_fb : #4779bb;
+
+////////////////////////////////////////////////
+////////////////// Background //////////////////
+////////////////////////////////////////////////
+
+$border : 1px dotted #888;
+$header_bg : #fff;
+$footer_bg : #fff;
+$sidebar_first_bg : #fff;
+$sidebar_second_bg : #fff;
+$navigation_bg : #fff;
+$navigation_sub_bg : #999;
+$navigation_header_border: #666;
+$bg_grad_radial : radial-gradient(60% 100%, $blue_active 1%, $main_bg_color 25%) fixed;
+
+////////////////////////////////////////////////
+///////////////////// Fonts ////////////////////
+////////////////////////////////////////////////
+
+$headline_font : 'Verlag-Black', Arial, Sans-Serif;
+$main_font : 'Verlag-Book', Arial, Sans-Serif;
+$monospace_font : "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+
+@import "mixins";
